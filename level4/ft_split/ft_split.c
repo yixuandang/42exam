@@ -20,7 +20,7 @@ int		count_words(char *str)
 	while (*str)
 	{
 		while (*str && (*str == ' ' || *str == '\n' || *str == '\t'))
-			i++;
+			str++;
 		if (*str && *str != ' ' && *str != '\n' && *str != '\t')
 		{
 			count++;
